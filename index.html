@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoteKeeper</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
     <div class="container">
@@ -17,19 +18,20 @@
                 
                 <label for="content">Content</label>
                 <input type="text" id="content" name="content" required>
-                
                 <label for="priority">Priority</label>
-                <select id="priority" name="priority" required>
-                    <option value="" disabled selected>Select priority</option>
+                <select id="priority">
+                    <option value="">Select priority</option>
                     <option value="High">High</option>
                     <option value="Medium">Medium</option>
                     <option value="Low">Low</option>
                 </select>
                 
+                
                 <button type="submit" class="add-note-btn">Add Note</button>
             </form>
         </div>
-        
+        <button onclick="toggleTheme()">Toggle Theme</button>
+
         <div class="note-list">
             <h2>Notes List</h2>
             <ul id="notes"></ul>
