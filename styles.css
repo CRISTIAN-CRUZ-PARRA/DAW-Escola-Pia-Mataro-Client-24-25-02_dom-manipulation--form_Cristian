@@ -1,0 +1,100 @@
+/* Global Styles */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --form-background: #f1f1f1;
+    --note-background: #ffffff;
+}
+
+[data-theme="dark"] {
+    --background-color: #2c2c2c;
+    --text-color: #ffffff;
+    --form-background: #333333;
+    --note-background: #444444;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.container {
+    background-color: var(--container-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+/* Form Styles */
+.note-form {
+    margin-bottom: 20px;
+}
+
+.note-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.note-form label {
+    margin-bottom: 5px;
+}
+
+.note-form input, .note-form select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.add-note-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-note-btn:hover {
+    background-color: #218838;
+}
+
+/* Notes List Styles */
+.note-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.note-list li {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Dark and Light Mode Styles */
+:root {
+    --bg-color: #f0f0f0;
+    --text-color: #333;
+    --container-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #2e2e2e;
+    --text-color: #f0f0f0;
+    --container-bg: #333;
+}

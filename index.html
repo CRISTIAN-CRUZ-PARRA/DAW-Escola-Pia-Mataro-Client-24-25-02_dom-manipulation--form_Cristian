@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteKeeper</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <div class="container">
+        <h1>NoteKeeper</h1>
+        <div class="note-form">
+            <h2>New Note Form</h2>
+            <form id="note-form">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="content">Content</label>
+                <input type="text" id="content" name="content" required>
+                <label for="priority">Priority</label>
+                <select id="priority">
+                    <option value="">Select priority</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                
+                
+                <button type="submit" class="add-note-btn">Add Note</button>
+            </form>
+        </div>
+        <button onclick="toggleTheme()">Toggle Theme</button>
+
+        <div class="note-list">
+            <h2>Notes List</h2>
+            <ul id="notes"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
